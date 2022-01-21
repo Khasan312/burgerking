@@ -5,6 +5,7 @@ from cart.cart import Cart
 from .forms import CreateProductForm, UpdateProductForm
 from.models import Category, Product
 
+
 def index(request):
     categories = Category.objects.all()
     print(categories)
