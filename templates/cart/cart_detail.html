@@ -26,11 +26,13 @@
 </div>
     {%endfor%}
 </div>
-<a href="{% url 'cart_clear' %}">Clear Cart
->
+<a href="{% url 'cart_clear' %}">
       <img style="width: 150px; height: auto;" src="{% static  'bin.jpg'%}">
     </a>
 
+<a class="btn btn-danger" href="{% url 'order-create' %}">
+   Place order
+   <a/>
 
 
 {% endblock %}

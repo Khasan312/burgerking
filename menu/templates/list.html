@@ -14,7 +14,7 @@
       </h5>
       <p class="card-text">{{product.price}}$ </p>
 
-      {% if product.status == 'Take it' %}
+      {% if product.status == 'in stock' %}
       <a href="{% url 'cart_add' product.id %}">
       <img style="width: 60px; height: auto;" src="{% static  'shopping-cart.png'%}">
         </a>
